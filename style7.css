@@ -1,0 +1,496 @@
+.full-nav {
+    width: 100vw;
+    background: black;
+}
+.nav-conatiner {
+    width: 1200px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+.menu-and-search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+#menu,
+#menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+}
+#men:before,
+#menu:after {
+    content: '';
+    display: table;
+}
+#menu:after {
+    clear: both;
+}
+#menu li {
+    float: left;
+    list-style: none;
+    text-decoration: none;
+}
+#menu a {
+    padding: 12px, 13px;
+    text-decoration: none;
+    color: #fff;
+}
+#menu li:hover>a {
+    color: aquamarine;
+    background: #262626;
+}
+.menu-li {
+    position: relative;
+}
+#menu ul {
+    padding: 50px 40px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    background: #262626;
+    border-radius: 3px;
+    transition: all .3s;
+}
+#menu li:hover>ul {
+    opacity: 1;
+    visibility: visible;
+    margin: 0;
+}
+#menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+.submenu li a:hover {
+
+    background: #262626;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.search-input {
+    background: transparent;
+    border-radius: 20px;
+    position: relative;
+    width: 162px;
+    height: 40px;
+}
+.run {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 25px;
+    border: 2px solid orangered;
+    background: transparent;
+}
+.run:focus {
+    outline: none;
+}
+.search-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 40%;
+    cursor: pointer;
+    border: none;
+    margin-left: 140px;
+    width: 24px;
+    height: 24px;
+}
+.search-icon i {
+    width: 16px;
+    height: 16px;
+    border: 2px;
+    color: #F16214;
+    padding: 11px 13px 0 0;
+}
+#icon1 {
+    width: 40px;
+    height: 40px;
+    background: #F16214;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#icon1 i {
+    font-size: 20px;
+    color: white;
+}
+.button {
+    background-color: orangered;
+    border-radius: 30px;
+    width: 104px;
+    height: 54px;
+    padding: 16px, 26px, 16px, 26px;
+}
+.menu-header-text {
+    width: 208px;
+    height: 101px;
+    gap: 10px;
+    letter-spacing: 0em;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+.menu-header-text .text {
+    font-family: Roboto;
+    font-size: 42px;
+    color: #fff;
+}
+.menu-header-text .description {
+    width: 317px;
+    height: 521px; 
+    font-family: Imperial Script;
+    font-size: 40px;
+    color: #F16214;
+    justify-content: center;
+}
+.hero-section {
+    background-image: linear-gradient(0deg, rgba(14, 10, 12, 0.795), rgba(14, 10, 12, 0.795)), url("/images/contact/BgHeader.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 359px;
+    overflow-x: hidden;
+}
+/* main part start here */
+.reservation-container {
+    max-width: 1298px;
+    margin: auto;
+}
+.reservation-content {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.phone {
+    margin: 147px auto 129px auto;
+    justify-content: space-between;
+}
+.phn {
+    width: 70px;
+    height: 70px;
+    padding: 5.6px, 2.8px, 2.8px, 2.8px;
+}
+.phne-text {
+    width: 320px;
+    height: 116px;
+    font-family: Roboto;
+}
+.phne-text h3 {
+    font-family: Roboto;
+    font-size: 28px;
+    color: #000000;
+    text-align: left;
+}
+.phne-text p {
+    font-size: 16px;
+    text-align: left;
+    color: #6E6D6D;
+}
+.juice {
+    width: 242px;
+    height: 266px;
+    margin-top: 146px;
+}
+.snacks {
+    width: 366px;
+    height: 251px;
+    margin-left: 0 auto 103px 252px;
+}
+.note {
+    width: 366px;
+    height: 251px;
+}
+.note img {
+    width: 70px;
+    height: 70px;
+}
+.note-text {
+    width: 371px;
+    height: 33px;
+    font-family: Roboto;
+}
+.note h3 {
+    width: 371px;
+    height: 33px;
+    font-size: 28px;
+    text-align: left;
+}
+.note p {
+    font-size: 16px;
+    text-align: left;
+}
+/* Another part staer here */
+#reservation {
+    max-width: 1404px;
+    position: relative;
+}
+.reservation-header {
+    text-align: center;
+}
+.reservation-header h3 {
+    color: #0D0C0C;
+    font-size: 42px;
+}
+.reservation-header p {
+    font-family: Imperial Script;
+    font-size: 40px;
+}
+.heading {
+    text-align: center;
+    margin: auto;
+    font-size: 28px;
+    color: #000000;
+}
+#reservation-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.left-image {
+    width: 372px;
+    height: 488px;
+}
+.right-image{
+    width: 317px;
+    height: 521px;
+    margin-bottom:166px;
+}
+.card-content{
+    background-image: linear-gradient(0deg, rgba(14, 10, 12, 0.795), rgba(14, 10, 12, 0.795)), url("/images/review/book\ table.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 77px 12px;
+    width: 513px;
+    height: 437px;
+    border-radius: 10px;
+    margin-bottom: 166px;
+}
+.reservation-form {
+    width: 338px;
+    height: 318px;
+    border-radius: 10px;
+    border-radius: 10px;
+    margin: 60px auto;
+}
+.reservation-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.reservation-info-input-group {
+    width: 288px;
+    border-radius: 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.reservation-info-input-group input {
+    width: 288px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid orangered;
+    background: transparent;
+    color: #FFFFFF;
+}
+.reservation-input-group .reservation-user-info-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+.reservation-user-info-group input {
+    background: transparent;
+    width: 165px;
+    height: 38px;
+    border-radius: 10px;
+    border: 1px solid orangered;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+.booked-btn-container {
+    margin-top: 36px;
+    text-align: center;
+}
+.booked-btn {
+    width: 172px;
+    height: 54px;
+    border-radius: 10px;
+    gap: 10px;
+    background: #F16214;
+    color: #E7E7E7;
+    padding: 16px 30px;
+    border: none;
+}
+.icon {
+    position: relative;
+    width: 288px;
+}
+.icon i {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    color: #3D3D3D;
+}
+.icon1 {
+    position: relative;
+    width: 165px;
+}
+.icon1 i {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    color: #3D3D3D;
+}
+/* Footer part start here */
+.footer {
+    background: #0D1518;
+}
+.footer-element {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-column-gap: 90px;
+    padding: 78px 144px;
+}
+/* foodi icon part start here */
+.foodi-icon {
+    margin: auto;
+}
+.footer-text {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.link {
+    padding: 0px, 0px, 0px, 0px;
+    display: flex;
+    gap: 27px;
+}
+#icon-div {
+    background: #F16214;
+    border-radius: 5px;
+    width: 43px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#icon-div i {
+    font-size: 30px;
+}
+/* footer rest of three part start here */
+.foote-three-part {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+/* Opening Restaurent,user link,contact part */
+.footer-description {
+    width: 208.72px;
+    height: 151px;
+    left: 596.07px;
+    color: #FFF;
+}
+.footer-description-title {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 20px;
+}
+.footer-description p {
+    font-family: Roboto;
+    font-size: 16px;
+    color: #ffffff;
+}
+/* contact us part start here */
+.contact-us h4 {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.location {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+}
+.search-input1 {
+    position: relative;
+    width: 195.68px;
+    height: 40px;
+    border-radius: 10px;
+}
+.search-input1 input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-family: Roboto;
+    font-size: 14px;
+    color:#E7E7E7;
+}
+.sub-btn {
+    width: 31.11px;
+    height: 31px;
+    border-radius: 6px;
+    background: #F16214;
+    border: none;
+    color: #fff;
+    padding: 4px 3px;
+    position: absolute;
+    right: 10px;
+    top: 6px;
+}
+/* footer another part  */
+.finishing {
+    background: #D9D9D9;
+    display: flex;
+    width: 1427px;
+    height: 1px;
+    align-items: center;
+    justify-content: center;
+}
+#horizontal-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F16214;
+    width: 46px;
+    height: 46px;
+    border-radius: 100%;
+}
+#horizontal-icon i {
+    color: white;
+}
+.copy-text {
+    color: #FFF;
+    width: 298px;
+    height: 24px;
+    font-family: Roboto;
+    font-size: 16px;
+    margin-top: 35px;
+    padding: 8px 578px 19px 564px;
+    align-items: center;
+}

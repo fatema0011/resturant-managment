@@ -1,0 +1,968 @@
+*.nav-conatiner {
+    max-width: 1299.68px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+    margin: 30x 70px 0 70px;
+
+}
+.foodi {
+    width: 114px;
+    height: 48px;
+    top: 10px;
+
+}
+
+.menu-and-search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+#menu,
+#menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    width: 516.68px;
+    height: 28px;
+    /* top: 13px; */
+    /* left: 390px; */
+    gap: 20px;
+    color: #fff;
+    /* margin:10px 44px 10px 276px; */
+}
+
+#menu:before,
+#menu:after {
+    content: '';
+    display: table;
+}
+
+#menu:after {
+    clear: both;
+}
+
+#menu li {
+    float: left;
+    list-style: none;
+    text-decoration: none;
+}
+
+#menu a {
+    padding: 12px, 13px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#menu li:hover>a {
+    color: aquamarine;
+    background: #262626;
+}
+
+.menu-li {
+    position: relative;
+}
+
+#menu ul {
+    padding: 50px 40px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    background: #262626;
+    border-radius: 3px;
+    transition: all .3s;
+}
+
+#menu li:hover>ul {
+    opacity: 1;
+    visibility: visible;
+    margin: 0;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.submenu li a:hover {
+
+    background: #262626;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-input {
+    background: transparent;
+    border-radius: 20px;
+    position: relative;
+    width: 162px;
+    height: 40px;
+}
+
+.run {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 25px;
+    border: 2px solid orangered;
+    background: transparent;
+}
+
+.run:focus {
+    outline: none;
+}
+
+.search-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 40%;
+    cursor: pointer;
+    border: none;
+    margin-left: 140px;
+    width: 24px;
+    height: 24px;
+}
+
+.search-icon i {
+    width: 16px;
+    height: 16px;
+    border: 2px;
+    color: #F16214;
+    padding: 11px 13px 0 0;
+}
+
+#icon1 {
+    width: 40px;
+    height: 40px;
+    background: #F16214;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#icon1 i {
+    font-size: 20px;
+    color: white;
+}
+.button {
+    background-color: orangered;
+    border-radius: 30px;
+    width: 104px;
+    height: 54px;
+    padding: 16px, 26px, 16px, 26px;
+    /* gap: 10px; */
+}
+.hero-section {
+    background-image: linear-gradient(0deg, rgba(14, 10, 12, 0.795), rgba(14, 10, 12, 0.795)), url("/images/nav/hero-cover.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* text part start here */
+.hero-main-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.home-header-text {
+    margin-left: 70px;
+}
+.me {
+    color: orangered;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.we {
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.us {
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.btn {
+    justify-content: space-between;
+}
+.btn-1 {
+    background-color: orangered;
+    color: #E7E7E7;
+    font-size: 18px;
+    border-radius: 30px;
+    padding: 16px 26px;
+    border: none;
+}
+.btn-2 {
+    background: transparent;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 30px;
+    border: 1px solid orangered;
+    color: #F16214;
+    padding: 16px 26px;
+}
+.pizza {
+    width: 575px;
+    height: 533px;
+    /* position: absolute; */
+}
+/* for mobile device */
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    .nav-conatiner {
+        display: none;
+    }
+
+    .home-header-text {
+        margin-left: 40px;
+    }
+
+    .me {
+        font-size: 15px;
+    }
+
+    .we {
+        font-size: 20px;
+    }
+
+    .us {
+        font-size: 14px;
+    }
+
+    .btn {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .btn-1 {
+        padding: 4px 10px;
+        font-size: 10px;
+        border-radius: 15px;
+    }
+
+    .btn-2 {
+        padding: 4px 10px;
+        font-size: 10px;
+        border-radius: 15px;
+    }
+
+    .pizza {
+        width: 320px;
+        height: 200px;
+    }
+}
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+    .nav-conatiner {
+        display: none;
+    }
+
+    .home-header-text {
+        margin-left: 40px;
+    }
+
+    .me {
+        font-size: 15px;
+    }
+
+    .we {
+        font-size: 20px;
+    }
+
+    .us {
+        font-size: 14px;
+    }
+
+    .btn {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .btn-1 {
+        padding: 4px 10px;
+        font-size: 10px;
+        border-radius: 15px;
+    }
+
+    .btn-2 {
+        padding: 4px 10px;
+        font-size: 10px;
+        border-radius: 15px;
+    }
+
+    .pizza {
+        width: 320px;
+        height: 200px;
+    }
+}
+
+/* text part end here */
+
+/* special cuisine start from here */
+.cuisine-section {
+    max-width: 1300px;
+}
+
+.cuisine-text {
+
+    text-align: center;
+    align-items: center;
+
+}
+
+.cuisine-text h3 {
+    font-size: 40px;
+    font-family: Imperial Script;
+    color: #F16214;
+
+}
+
+.cuisine-text p {
+    font-family: Roboto;
+    color: #0D0C0C;
+    font-size: 42px;
+}
+
+.card-group {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card {
+    padding: 53px 55px;
+    background-color: black;
+    border-radius: 100px;
+    display: flex;
+    gap: 14px;
+}
+
+.card img {
+    height: 50px;
+    width: 50px;
+}
+
+.card-header {
+    margin: 0;
+    color: #F16214;
+}
+
+.card-description {
+    margin: 0;
+    color: #CFCECE;
+}
+
+/* special cuisine end here */
+/* Most popular items start here */
+.item-section {
+    max-width: 1299.68px;
+    margin: 120px auto auto auto;
+}
+
+.item-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.item-header-title {
+    color: #F16214;
+    font-family: "Imperial Script", cursive;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+}
+
+.item-header-description {
+    color: #0D0C0C;
+    font-family: "Roboto";
+    font-size: 42px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.item-group {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.item-card {
+    border-radius: 200px;
+    background: #0D1518;
+    padding: 0 0 66px 0;
+}
+
+.item-card-image {
+    width: 100%;
+    margin-top: -20px;
+}
+
+.item-card-description {
+    text-align: center;
+}
+
+.item-title {
+    color: white;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.item-price {
+    color: #F16214;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+}
+
+.item-ratings {
+    color: #F16214;
+    font-family: Montserrat;
+    font-size: 25px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.item-btn {
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    color: #F16214;
+}
+
+.item-btn button {
+    background: #F16214;
+    color: #E7E7E7;
+    width: 180px;
+    height: 50px;
+    padding: 4px, 26px, 4px, 26px;
+    border-radius: 40px;
+    gap: 10px;
+    border: none;
+    font-size: 18px;
+
+}
+
+/* most popular items end here */
+
+/* chooes section start here */
+.choose-section {
+    max-width: 908px;
+    height: 505px;
+    margin: 120px auto auto auto;
+    position: relative;
+}
+.choose-header {
+    text-align: center;
+}
+.choose-header-title {
+    color: #F16214;
+    font-family: Imperial Script;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0px;
+}
+.choose-header-description {
+    color: #0D0C0C;
+    font-family: Roboto;
+    font-size: 42px;
+    font-weight: 700;
+    margin: 0;
+}
+.choose-group {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.choose-card {
+    border-radius:200px;
+    background: #fff;
+    padding: 77px 12px;
+    border: 1px solid #6E6D6D;
+}
+
+.choose-card-image-div {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+}
+
+.choose-card-description {
+    text-align: center;
+}
+
+.choose-title {
+    color: #000;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 35px;
+}
+
+/* chooes section end here */
+
+/* number section start here */
+
+.number-section {
+    max-width: 1440px;
+    height: 445px;
+    background-image: linear-gradient(0deg, rgba(14, 10, 12, 0.795), rgba(14, 10, 12, 0.795)), url("/images/choose/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.number-section .number-group {
+    max-width: 908px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 130px auto 130px auto;
+    width: 980px;
+    height: 185px;
+    flex-shrink: 0;
+}
+
+.number-section .number-card {
+    border-radius: 100%;
+    background: none;
+    border: 3px dashed #F16214;
+    width: 185px;
+    height: 185px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.number-section .number-title {
+    text-align: center;
+    color: #FFF;
+    font-size: 50px;
+    margin: 0;
+    font-weight: 700;
+
+}
+
+.number-section .choose-description {
+    margin: 0;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    color: #FFF;
+}
+
+/* number section end here */
+/* Customer Reviews section start here */
+.customer-section {
+    max-width: 1404px;
+    position: relative;
+}
+
+.review-header {
+    text-align: center;
+    align-items: center;
+}
+
+.review-header h3 {
+    text-align: center;
+    color: #F16214;
+    font-family: Imperial Script;
+    font-size: 40px;
+}
+
+.review-header p {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 42px;
+}
+
+.customer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.middle-part {
+    width: 526px;
+    height: 227px;
+}
+
+#middle-men {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.review-men-title {
+    color: #F16214;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.review-men-description {
+    color: #000000;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.about-middle-men {
+    text-align: center;
+    justify-content: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    color: #6E6D6D;
+}
+
+.review-icon {
+    display: flex;
+    width: 56px;
+    height: 25px;
+    color: #F16214;
+    justify-items: center;
+}
+
+/* Customer Reviews section end here */
+/* Reservation Section Start here */
+#reservation {
+    max-width: 1404px;
+    position: relative;
+}
+.reservation-header {
+    text-align: center;
+    align-items: center;
+
+}
+.reservation-header h3 {
+    color: #F16214;
+    font-family: Imperial Script;
+    font-size: 40px;
+}
+.reservation-header p {
+    color: #0D0C0C;
+    font-family: Roboto;
+    font-size: 42px;
+}
+#reservation-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left-image {
+    width: 372px;
+    height: 488px;
+}
+.card-content {
+    width: 389px;
+    height: 490px;
+    background-image: linear-gradient(0deg, rgba(14, 10, 12, 0.795), rgba(14, 10, 12, 0.795)), url("/images/review/book\ table.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 200px;
+    padding: 77px 12px;
+    border: 1px solid #6E6D6D;
+}
+.form-tittle {
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+
+}
+.reservation-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.reservation-info-input-group {
+    width: 288px;
+    border-radius: 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.reservation-info-input-group input {
+    background: #F9C0A1;
+    width: 288px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+}
+.reservation-input-group .reservation-user-info-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+.reservation-user-info-group input {
+    background: #F9C0A1;
+    width: 165px;
+    height: 38px;
+    border-radius: 30px;
+    border: none;
+}
+.booked-btn-container {
+    margin-top: 36px;
+    text-align: center;
+}
+.booked-btn {
+    background: #F16214;
+    color: #E7E7E7;
+    padding: 16px 30px;
+    border-radius: 30px;
+    border: none;
+}
+.icon {
+    position: relative;
+    width: 288px;
+}
+.icon i {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    color: #3D3D3D;
+
+}
+.icon1 {
+    position: relative;
+    width: 165px;
+}
+.icon1 i {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    color: #3D3D3D;
+}
+/* Reservation Section end here */
+/* subscrib section start here */
+.subcribs {
+    background-image: linear-gradient(0deg, rgba(14, 10, 12, 0.795), rgba(14, 10, 12, 0.795)), url("/images/review/subg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.burger {
+    width: 465.97px;
+    height: 544px;
+}
+
+.subscribs-text {
+    width: 520.53px;
+    height: 243.4px;
+    border-radius: 30px;
+    margin: auto;
+}
+
+.subscribs-text-header {
+    width: 519.08px;
+    height: 130px;
+}
+
+.subscribs-title {
+    font-family: Roboto;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 49px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.subscribs-description {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #E7E7E7;
+}
+
+.search-input1 {
+    height: 66px;
+    position: relative;
+    margin-top: 40px;
+}
+
+.search-input1 input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+}
+
+.sub-btn {
+    background: #F16214;
+    border: none;
+    color: #fff;
+    padding: 16px 26px;
+    font-size: 18px;
+    border-radius: 30px;
+    position: absolute;
+    right: 10px;
+    top: 6px;
+}
+
+/* subscrib section end here */
+
+
+/* Footer part start here */
+.footer {
+    background: #0D1518;
+}
+.footer-element {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-column-gap: 90px;
+    padding: 78px 144px;
+}
+/* foodi icon part start here */
+.foodi-icon {
+    margin: auto;
+}
+.footer-text {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.link {
+    padding: 0px, 0px, 0px, 0px;
+    display: flex;
+    gap: 27px;
+}
+#icon-div {
+    background: #F16214;
+    border-radius: 5px;
+    width: 43px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#icon-div i {
+    font-size: 30px;
+}
+/* footer rest of three part start here */
+.foote-three-part {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+/* Opening Restaurent,user link,contact part */
+.footer-description {
+    width: 208.72px;
+    height: 151px;
+    left: 596.07px;
+    color: #FFF;
+}
+.footer-description-title {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 20px;
+}
+.footer-description p {
+    font-family: Roboto;
+    font-size: 16px;
+    color: #ffffff;
+}
+/* contact us part start here */
+.contact-us h4 {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.location {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+}
+.mail-btn {
+    background: #FFFFFF;
+    color: #E7E7E7;
+    border-radius: 10px;
+    border: none;
+    width: 195.68px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.mail-btn i {
+    width: 31.11px;
+    height: 31px;
+    border-radius: 6px;
+    background: #F16214;
+    color: #FFF;
+    font: 20px;
+}
+/* footer another part  */
+.finishing {
+    background: #D9D9D9;
+    display: flex;
+    width: 1427px;
+    height: 1px;
+    align-items: center;
+    justify-content: center;
+}
+#horizontal-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F16214;
+    width: 46px;
+    height: 46px;
+    border-radius: 100%;
+}
+#horizontal-icon i {
+    color: white;
+}
+.copy-text {
+    color: #FFF;
+    width: 298px;
+    height: 24px;
+    font-family: Roboto;
+    font-size: 16px;
+    margin-top: 35px;
+    padding: 8px 578px 19px 564px;
+    align-items: center;
+}

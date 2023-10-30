@@ -1,0 +1,312 @@
+.full-nav {
+    width: 100vw;
+    background: black;
+}
+.nav-conatiner {
+    width: 1200px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+.menu-and-search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+#menu,
+#menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+}
+#men:before,
+#menu:after {
+    content: '';
+    display: table;
+}
+#menu:after {
+    clear: both;
+}
+#menu li {
+    float: left;
+    list-style: none;
+    text-decoration: none;
+}
+#menu a {
+    padding: 12px, 13px;
+    text-decoration: none;
+    color: #fff;
+}
+#menu li:hover>a {
+    color: aquamarine;
+    background: #262626;
+}
+.menu-li {
+    position: relative;
+}
+#menu ul {
+    padding: 50px 40px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    background: #262626;
+    border-radius: 3px;
+    transition: all .3s;
+}
+#menu li:hover>ul {
+    opacity: 1;
+    visibility: visible;
+    margin: 0;
+}
+#menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+.submenu li a:hover {
+
+    background: #262626;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.search-input {
+    background: transparent;
+    border-radius: 20px;
+    position: relative;
+    width: 162px;
+    height: 40px;
+}
+.run {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 25px;
+    border: 2px solid orangered;
+    background: transparent;
+}
+.run:focus {
+    outline: none;
+}
+.search-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 40%;
+    cursor: pointer;
+    border: none;
+    margin-left: 140px;
+    width: 24px;
+    height: 24px;
+}
+.search-icon i {
+    width: 16px;
+    height: 16px;
+    border: 2px;
+    color: #F16214;
+    padding: 11px 13px 0 0;
+}
+#icon1 {
+    width: 40px;
+    height: 40px;
+    background: #F16214;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#icon1 i {
+    font-size: 20px;
+    color: white;
+}
+.button {
+    background-color: orangered;
+    border-radius: 30px;
+    width: 104px;
+    height: 54px;
+    padding: 16px, 26px, 16px, 26px;
+}
+.menu-header-text {
+    width: 219px;
+    height: 102px;
+    letter-spacing: 0em;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+
+}
+.menu-header-text .text {
+    font-family: Roboto;
+    font-size: 42px;
+    color: #fff;
+}
+.menu-header-text .description {
+
+    font-family: Imperial Script;
+    font-size: 40px;
+    color: #F16214;
+}
+.hero-section {
+    background-image: linear-gradient(0deg, rgba(14, 10, 12, 0.795), rgba(14, 10, 12, 0.795)), url("/images/menu/header.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 359px;
+    overflow-x: hidden;
+}
+/* main navbar  part */
+.menu-container {
+    display: flex;
+    font-size: 28px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: #fff;
+    margin: 120px auto 40px auto;
+}
+.menu-container li {
+    float: left;
+    list-style: none;
+    text-decoration: none;
+}
+.menu-container li a {
+    text-decoration: none;
+    color: black;
+}
+.menu-container li:hover>a{
+    color:blueviolet;
+    background: #262626;
+}
+.menu-container .all a {
+    color: #F16214;
+}
+
+/* Breakfast start here */
+.item-section {
+    max-width: 100vw;
+    height: 1682px;
+    margin: 120px auto auto auto;
+    background-image: linear-gradient(0deg, rgba(14, 10, 12, 0.795), rgba(14, 10, 12, 0.795)), url("/images/menu/Bbreakfast.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.item-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.item-header-title {
+    color: #F16214;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+}
+.item-group {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+.item-card {
+    border-radius: 200px;
+    background: #fff;
+    padding: 0 0 66px 0;
+}
+.item-card-image {
+    width: 100%;
+    margin-top: -20px;
+}
+.item-card-description {
+    text-align: center;
+}
+.item-title {
+    color: black;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+}
+.item-price {
+    color: #F16214;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+}
+.item-ratings {
+    color: #F16214;
+    font-family: Montserrat;
+    font-size: 25px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.item-btn {
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    color: #F16214;
+}
+.item-btn button {
+    background: #F16214;
+    color: #E7E7E7;
+    width: 180px;
+    height: 50px;
+    padding: 4px, 26px, 4px, 26px;
+    border-radius: 40px;
+    gap: 10px;
+    border: none;
+    font-size: 18px;
+}
+.item-view-btn {
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+    color: #F16214;
+}
+.item-view-btn button{
+    background: #F16214;
+    color: #E7E7E7;
+    width: 125px;
+    height: 54px;
+    padding: 4px, 26px, 4px, 26px;
+    border-radius: 40px;
+    gap: 10px;
+    border: none;
+    font-size: 18px;
+} 
+/* lunch section start here     */
+.lunch-section{
+    max-width: 100vw;
+    height: 1682px;
+    margin: 120px auto auto auto;
+    background-image: linear-gradient(0deg, rgba(248, 246, 247, 0.884), rgba(248, 246, 247, 0.884)), url("/images/menu/Bbreakfast.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;   
+}
+.lunch-header{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.lunch-header-title {
+    color: #0D0C0C;
+    font-family: Roboto;
+    font-size: 42px;
+    font-style: normal;
+    margin: 0;
+}
+/* Dinner section start here */

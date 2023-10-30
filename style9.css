@@ -1,0 +1,340 @@
+.full-nav {
+    width: 100vw;
+    background: black;
+}
+.nav-conatiner {
+    width: 1200px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+.menu-and-search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+#menu,
+#menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+}
+#men:before,
+#menu:after {
+    content: '';
+    display: table;
+}
+#menu:after {
+    clear: both;
+}
+#menu li {
+    float: left;
+    list-style: none;
+    text-decoration: none;
+}
+#menu a {
+    padding: 12px, 13px;
+    text-decoration: none;
+    color: #fff;
+}
+#menu li:hover>a {
+    color: aquamarine;
+    background: #262626;
+}
+.menu-li {
+    position: relative;
+}
+#menu ul {
+    padding: 50px 40px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    background: #262626;
+    border-radius: 3px;
+    transition: all .3s;
+}
+#menu li:hover>ul {
+    opacity: 1;
+    visibility: visible;
+    margin: 0;
+}
+#menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+.submenu li a:hover {
+
+    background: #262626;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.search-input {
+    background: transparent;
+    border-radius: 20px;
+    position: relative;
+    width: 162px;
+    height: 40px;
+}
+.run {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 25px;
+    border: 2px solid orangered;
+    background: transparent;
+}
+.run:focus {
+    outline: none;
+}
+.search-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 40%;
+    cursor: pointer;
+    border: none;
+    margin-left: 140px;
+    width: 24px;
+    height: 24px;
+}
+.search-icon i {
+    width: 16px;
+    height: 16px;
+    border: 2px;
+    color: #F16214;
+    padding: 11px 13px 0 0;
+}
+#icon1 {
+    width: 40px;
+    height: 40px;
+    background: #F16214;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#icon1 i {
+    font-size: 20px;
+    color: white;
+}
+.button {
+    background-color: orangered;
+    border-radius: 30px;
+    width: 104px;
+    height: 54px;
+    padding: 16px, 26px, 16px, 26px;
+}
+/* main part start here */
+.main-container{
+max-width: 1299px;
+display: flex;
+}
+.main-element{
+  margin:auto;
+}
+.main-element img{
+    width: 264px;
+}
+.main-element h2{
+    font-family: Roboto;
+    font-size: 18px;
+    color: #000000;   
+}
+.card-container{
+    display: grid;
+    gap: 29px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.card{
+    width: 253px;
+    height: 65.95px;
+    border-bottom: 2px solid #F9C0A1;     
+}
+.tittle{
+    font-family: Roboto;
+    font-size: 16px;
+    color:#0D0C0C;
+}
+.text{
+    font-family: Roboto;
+    font-size: 18px;
+    color: #3D3D3D;
+}
+.icon-mail{
+display: flex;
+width: 253px;
+height: 31.95px;
+justify-content:space-between;
+}
+.last-icon{
+    width: 24px;
+    height: 24px;
+    border: 2px;
+}
+.last-icon i{
+color: #F9C0A1;
+}
+#button1{
+    width: 159px;
+    height:38px;
+    padding: 8px 14px 8px 14px;
+    border-radius: 6px;
+    margin:32px auto 130px 0px;
+    background: #F16214;
+    color: #FFFFFF;
+    border: none;
+} 
+.burger{
+    width: 566px;
+    height: 566px;
+    margin:134px 72px 72px auto;    
+}
+/* Footer part start here */
+.footer {
+    background: #0D1518;
+}
+.footer-element {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-column-gap: 90px;
+    padding: 78px 144px;
+}
+/* foodi icon part start here */
+.foodi-icon {
+    margin: auto;
+}
+.footer-text {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.link {
+    padding: 0px, 0px, 0px, 0px;
+    display: flex;
+    gap: 27px;
+}
+#icon-div {
+    background: #F16214;
+    border-radius: 5px;
+    width: 43px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#icon-div i {
+    font-size: 30px;
+}
+/* footer rest of three part start here */
+.foote-three-part {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+/* Opening Restaurent,user link,contact part */
+.footer-description {
+    width: 208.72px;
+    height: 151px;
+    left: 596.07px;
+    color: #FFF;
+}
+.footer-description-title {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 20px;
+}
+.footer-description p {
+    font-family: Roboto;
+    font-size: 16px;
+    color: #ffffff;
+}
+/* contact us part start here */
+.contact-us h4 {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.location {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+}
+.search-input1 {
+    position: relative;
+    width: 195.68px;
+    height: 40px;
+    border-radius: 10px;
+}
+.search-input1 input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-family: Roboto;
+    font-size: 14px;
+    color:#E7E7E7;
+}
+.sub-btn {
+    width: 31.11px;
+    height: 31px;
+    border-radius: 6px;
+    background: #F16214;
+    border: none;
+    color: #fff;
+    padding: 4px 3px;
+    position: absolute;
+    right: 10px;
+    top: 6px;
+}
+/* footer another part  */
+.finishing {
+    background: #D9D9D9;
+    display: flex;
+    width: 1427px;
+    height: 1px;
+    align-items: center;
+    justify-content: center;
+}
+#horizontal-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F16214;
+    width: 46px;
+    height: 46px;
+    border-radius: 100%;
+}
+#horizontal-icon i {
+    color: white;
+}
+.copy-text {
+    color: #FFF;
+    width: 298px;
+    height: 24px;
+    font-family: Roboto;
+    font-size: 16px;
+    margin-top: 35px;
+    padding: 8px 578px 19px 564px;
+    align-items: center;
+}
+
